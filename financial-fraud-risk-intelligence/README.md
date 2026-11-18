@@ -25,3 +25,22 @@ The original ~470 MB PaySim CSV is intentionally excluded. To rerun training, ob
 - Generated ChromaDB files, credentials and the raw training data are excluded.
 - The ML model is an educational prototype. Scores are decision-support signals, not confirmed fraud; consequential decisions require authorized human review.
 - A GitHub upload is source-code publication, not live hosting.
+
+
+## Streamlit Community Cloud deployment
+
+1. Open [Streamlit Community Cloud](https://share.streamlit.io/) and sign in with GitHub.
+2. Select **Create app** / **Deploy a public app from GitHub**.
+3. Repository: `SankethHegde712/LogicMojo-AI-ML-March26-Sanketh`
+4. Branch: `main`
+5. Main file path: `financial-fraud-risk-intelligence/src/app/app.py`
+6. Choose Python **3.12** in advanced settings if available.
+7. Add this secret in Streamlit's advanced settings or app Secrets page, using your own private key:
+   ```toml
+   GEMINI_API_KEY = "your_private_gemini_api_key"
+   ```
+8. Deploy and test a synthetic high-risk transfer and a low-risk payment.
+
+The deployment-specific dependencies are in `src/app/requirements.txt`. The app creates its small policy vector index from the tracked synthetic policy text on first startup. The PaySim CSV is not required for predictions because the trained Random Forest model is included.
+
+**Submission caveat:** This is a demonstration app, not production banking software. The human-review node flags cases for review; an auditable reviewer decision workflow and the complete capstone automated-test suite are not implemented or verified.
