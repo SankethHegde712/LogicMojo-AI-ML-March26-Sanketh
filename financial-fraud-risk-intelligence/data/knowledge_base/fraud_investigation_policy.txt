@@ -1,0 +1,40 @@
+
+NORTHSTAR PAYMENTS
+FRAUD INVESTIGATION POLICY
+Document ID: NP-FRAUD-001
+Version: 1.0
+Synthetic demonstration document
+
+1. PURPOSE
+This policy supports human investigation of suspicious
+financial transactions. A fraud score is not proof of fraud.
+
+2. TRANSACTION AMOUNT
+Investigators should review transaction amounts in context.
+A large transaction alone does not establish fraud.
+
+3. SENDER BALANCE
+Investigators should compare the transaction amount with
+the sender's available balance before the transaction.
+
+4. TRANSACTION TYPE
+TRANSFER and CASH_OUT transactions may require additional
+review when supported by other risk indicators.
+
+5. FRAUD RISK SCORE
+Machine Learning predictions are decision-support signals.
+They must not be treated as confirmed fraudulent activity.
+
+6. HUMAN REVIEW
+An authorized investigator must review the available
+evidence before making consequential decisions.
+
+7. EVIDENCE AND AUDIT
+Investigation reports must distinguish verified facts,
+model predictions, and unresolved questions.
+All investigation activities should be recorded.
+
+8. INSUFFICIENT EVIDENCE
+If supporting evidence is missing, the AI assistant
+must identify the missing information and recommend
+further human investigation.

@@ -1,0 +1,13 @@
+data/raw/
+artifacts/vector_db/
+artifacts/genai_outputs/
+.env
+.env.*
+!.env.example
+*.key
+*credentials*.json
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+venv/
+.venv/
